@@ -1,0 +1,17 @@
+<body>
+This is a body
+
+
+<script>
+
+function leggo(){
+  new Notification("this is a test", {body: "This is a body"})
+  setTimeout(5000, () => leggo())
+}
+
+Notification.requestPermission()
+leggo()
+
+</script>
+
+</body>
