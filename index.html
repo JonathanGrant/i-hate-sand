@@ -4,10 +4,9 @@ This is a body
 
 <script>
 
-function leggo(){
+setInterval(function(){
   new Notification("this is a test", {body: "This is a body"})
-  setTimeout(5000, () => leggo())
-}
+}, 5000)
 
 Notification.requestPermission()
 leggo()
